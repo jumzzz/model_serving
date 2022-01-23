@@ -3,6 +3,8 @@
 This serves as a reference and a demo on how to serve models with
 LightGBM, Flask, gunicorn, nginx, and redis
 
+The task is to create a Web Service that serves a model that predicts the Income Bracket using **Adult Census Dataset**
+
 ## Training Details
 
 Model Training is implemented at `training` folder. 
