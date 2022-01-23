@@ -1,0 +1,13 @@
+{
+    "age": 90,
+    "workclass": "?",
+    "fnlwgt": 77053,
+    "marital.status": "widowed",
+    "occupation": "?",
+    "race": "white",
+    "sex": "female",
+    "capital.loss": 4356,
+    "hours.per.week": 40,
+    "native.country": "united-states",
+    "income": "<=50k"
+}

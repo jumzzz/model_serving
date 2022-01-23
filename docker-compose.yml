@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    command: gunicorn --bind 0.0.0.0:5000 wsgi:app
+    expose:
+      - 5000
+    depends_on:
+      - redis
+    env_file:
+      - app.env
+  nginx:
+    build: ./nginx
+    ports:
+      - 1337:80
+    depends_on:
+      - web
+  redis:
+    image: "redis:6.2.6-alpine"
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379"
+
