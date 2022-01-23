@@ -1,7 +1,7 @@
-# Serving Models (Thinking Machines Exam Part 2)
+# Serving Models 
   
-This is the Part 2 of Take-home exam for a Position of Machine Learning Engineer. The task is to create a Web Service that serves a model 
-that predicts the Income Bracket using **Adult Census Dataset**
+This serves as a reference and a demo on how to serve models with
+LightGBM, Flask, gunicorn, nginx, and redis
 
 ## Training Details
 
