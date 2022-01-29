@@ -14,6 +14,7 @@ RUN pip install --upgrade pip
 COPY requirements.txt /usr/src/app/project/requirements.txt
 RUN pip install -r requirements.txt
 
+EXPOSE 5000
 # copy project
 COPY tests /usr/src/app/tests
 COPY project /usr/src/app/project/

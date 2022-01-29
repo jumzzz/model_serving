@@ -25,6 +25,10 @@ Model Training is implemented at `training` folder.
 
 ## How to Run the WebService Locally
 
+Two options are available, either with `docker-compose` or `terraform`
+
+### With `docker-compose`
+
 The simplest way to run the Web Server is to use `docker-compose`. In this exact location of this repository simply type:
 
 ```
@@ -44,6 +48,23 @@ http://0.0.0.0:1337/predict_income
 ```
 
 Where it takes a sample payload from a `POST` request
+
+
+### With `terraform`
+
+You can also run this with `terraform`. Simply run the following
+
+```
+terraform init
+terraform plan
+terraform apply
+```
+
+If you want to destroy the docker containers simply
+
+```
+terraform destroy
+```
 
 
 ### Sample Payload

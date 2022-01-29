@@ -1,0 +1,8 @@
+*compose_nginx.json
+*compose_redis.json
+*compose_web.json
+*terraform_redis.json
+*terraform_web.json
+*terraform.tfstate
+*.terraform*
+*terraform.tfstate.backup
