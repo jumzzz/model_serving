@@ -18,10 +18,6 @@ Model Training is implemented at `training` folder.
 - docker + docker-compose :heavy_check_mark:
 - Unit Testing + Github Actions :heavy_check_mark:
 
-## Not Included
-- API accessible from a remote server :heavy_multiplication_x:
-- Load-testing the service can handle 100 concurrent users :heavy_multiplication_x:
-
 
 ## How to Run the WebService Locally
 
