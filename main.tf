@@ -36,7 +36,7 @@ resource "docker_container" "redis" {
     external = 6379
   }
   networks_advanced {
-    name = "network-default"
+    name = "docker_network"
     aliases = ["redis"]
   }
   ipc_mode = "shareable"
@@ -59,7 +59,7 @@ resource "docker_container" "web" {
     "CACHE_DEFAULT_TIMEOUT=500"
   ]
   networks_advanced {
-    name = "network-default"
+    name = "docker_network"
     aliases = ["web"]
   }
   ipc_mode = "shareable"
@@ -73,13 +73,13 @@ resource "docker_container" "nginx_custom" {
     external = 1337
   }
   networks_advanced {
-    name = "network-default"
+    name = "docker_network"
     aliases = ["nginx"]
   }
   ipc_mode = "shareable"
 }
 
 
-resource "docker_network" "network-default" {
-  name = "network-default"
+resource "docker_network" "docker_network" {
+  name = "docker_network"
 }
